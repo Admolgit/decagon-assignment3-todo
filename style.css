@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr; */
+  display: flex;
+}
+
+.todo-search {
+  padding-top: 8rem;
+  text-align: center;
+  padding-left: 3rem;
+  background-color: rgb(26, 26, 26);
+  height: 100vh;
+  padding-right: 3rem;
+  flex: 1;
+}
+
+.todo-search .search {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 3px solid white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.todo-search .tasks-button {
+  margin-top: 10rem;
+}
+
+.todo-search .btn-1,
+.todo-search .btn-2 {
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  background-color: #333;
+  color: #fff;
+  justify-content: center;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.create-todo {
+  padding: 5rem;
+  flex: 3;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.create-todo .todo-list {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 22%;
+  background-color: #333;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+} 
+
+@media only screen and (max-width: 800px) {
+  .todo {
+    flex-direction: column;
+  }
+
+  .todo-search {
+    display: flex;
+    padding-bottom: 10rem;
+  }
+
+  .todo-search .tasks-button {
+    margin-top: 0rem;
+    padding-left: 5rem;
+  }
+
+  .todo-search .btn-1,
+  .todo-search .btn-2 {
+    margin: 0 1rem;
+  } 
+
+  .tasks-button {
+    display: flex;
+  }
+}
